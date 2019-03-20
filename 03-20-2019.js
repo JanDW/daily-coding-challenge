@@ -4,13 +4,5 @@
 // Follow-up: what if you can't use division?
 
 const array1 = [1, 2, 3, 4, 5];
-
-const arrayProduct = array => {
-	let totalProduct = 1;
-	array.forEach(el => totalProduct *= el);
-	return totalProduct;
-}
-
-const totalProduct = arrayProduct(array1);
-
-console.log(array1.map(el => totalProduct / el));
+const totalProduct = array1.reduce((el,next) => el * next);
+array1.map(el => totalProduct / el);
