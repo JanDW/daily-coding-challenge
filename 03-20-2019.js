@@ -3,7 +3,7 @@
 // For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120, 60, 40, 30, 24]. If our input was [3, 2, 1], the expected output would be [2, 3, 6].
 // Follow-up: what if you can't use division?
 
-const array1 = [1, 2, 3, 4, 0];
+const array1 = [1, 2, 3, 4, 5];
 const array1ExcludingZeroes = array1.filter(el => el > 0);
 const array1ZeroesCount = array1.length - array1ExcludingZeroes.length;
 let array2 = [];
@@ -28,4 +28,20 @@ console.log(array2);
 // https://galaiko.rocks/posts/2018-07-03/
 // https://stackoverflow.com/questions/2680548/given-an-array-of-numbers-return-array-of-products-of-all-other-numbers-no-div
 //
-// @TODO This still isn't quite right, for the 0 position in array1, the product isn't 0 (unless there is a second 0 in the array).
+
+
+// @jeffw solutions (less convoluted than mine)
+const myArr = [1, 2, 3, 4, 5];
+const returnedArr = [];
+
+for (let i=0; i<myArr.length; i++){
+  let prodArr = 1;
+  for (let j=0; j<myArr.length; j++){
+    if (j!==i) {
+          prodArr *= myArr[j];
+   }
+  }
+  returnedArr.push(prodArr);
+}
+
+console.log(returnedArr);
