@@ -9,4 +9,4 @@
 const array = [10,15,3,7];
 const k = 17;
 
-array.some(el => (el < k) && array.indexOf(k - el) !== -1);
+console.log(array.some(el => array.indexOf(k - el) !== -1));
