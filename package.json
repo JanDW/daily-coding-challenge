@@ -1,0 +1,26 @@
+{
+  "name": "daily-coding-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "03-19-2019.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.3",
+    "babel": "^6.23.0",
+    "collections": "^5.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JanDW/daily-coding-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JanDW/daily-coding-challenge/issues"
+  },
+  "homepage": "https://github.com/JanDW/daily-coding-challenge#readme"
+}
